@@ -32,7 +32,7 @@
 
 ## 5. 팀에서 맡은 역할
 1) 모나미 사이트 UI 구현 (클론코딩) 
-2) 로그인, 회원가입 모달창 구현, 유효성 검사 :pushpin: [코드 확인](https://github.com/yoondori2/monami/blob/df5dafd789bcf3f2a9cf9f998d5d43267f33cf14/WebContent/js/user.js#L85)
+2) 로그인, 회원가입 모달창 구현, 유효성 검사 :pushpin: [코드 확인](https://github.com/yoondori2/monami/blob/57a11667413c4cd40e5f7ba9cc6504aaba9f9599/WebContent/js/user.js#L85)
 3) 관리자로 로그인시 뉴스와 이벤트 게시판을 운영하도록 기능 추가 
 4) 다른 li로 이동시 겹쳐지는 네비게이션 바 수정 
 
@@ -57,7 +57,7 @@
 ### 7.2. Controller 
 <img alt="flow2" src="https://user-images.githubusercontent.com/91296293/163971448-fd488a06-4073-4579-8bac-c9fc28c3fa61.png"></br>
 
-- **요청 응답** :pushpin: [코드 확인](https://github.com/yoondori2/monami/blob/df5391f9c56a24c3c293f53301e47a2a988a4a2f/com/monami/board/BoardFrontController.java#L14)
+- **요청 응답** :pushpin: [코드 확인](https://github.com/yoondori2/monami/blob/57a11667413c4cd40e5f7ba9cc6504aaba9f9599/src/com/monami/board/BoardFrontController.java#L69)
   - Controller에서는 요청을 화면단에서 넘어온 요청을 받고 DAO에서 로직을 처리한다.
   
   - 처리가 끝난 후에는 그 응답객체를 path와 응답방식(true or false)가 담긴 객체에 담아 넘겨준다.
@@ -66,7 +66,7 @@
 ### 7.3. Model(DAO,DTO)
 <img alt="flow3" src="https://user-images.githubusercontent.com/91296293/163971456-2098d945-ba02-458a-b4f4-503bb434e471.png">
 
-- **요청 처리** :pushpin: [코드 확인](https://github.com/yoondori2/monami/blob/df5391f9c56a24c3c293f53301e47a2a988a4a2f/com/monami/board/NewsWriteOkAction.java#L18)
+- **요청 처리** :pushpin: [코드 확인](https://github.com/yoondori2/monami/blob/57a11667413c4cd40e5f7ba9cc6504aaba9f9599/src/com/monami/board/dao/NewsBoardDAO.java#L18)
   
   - NewsWriteOkAction.java 에서 파라미터를 전달받아 DAO에서 처리한다.
 
@@ -79,7 +79,7 @@
 ### 7.5. view
 <img  alt="flow5" src="https://user-images.githubusercontent.com/91296293/163971466-e4e51666-1b74-47a6-b720-31eac8543b09.png">
 
-- **결과 응답** :pushpin: [코드 확인](https://github.com/yoondori2/monami/blob/df5391f9c56a24c3c293f53301e47a2a988a4a2f/WebContent/teamin/newsview.jsp#L74)
+- **결과 응답** :pushpin: [코드 확인](https://github.com/yoondori2/monami/blob/57a11667413c4cd40e5f7ba9cc6504aaba9f9599/WebContent/teamin/newsview.jsp#L74)
  
  - 처리가 완료된 결과를 redirect 방식으로 전달하고 view단에서 저장된 정보를 출력해준다.
 
